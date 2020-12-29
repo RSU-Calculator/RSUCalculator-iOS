@@ -1,0 +1,469 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7634F810257448E800E894FF /* RSU_CalcApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7634F80F257448E800E894FF /* RSU_CalcApp.swift */; };
+		7634F812257448E800E894FF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7634F811257448E800E894FF /* ContentView.swift */; };
+		7634F814257448E900E894FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7634F813257448E900E894FF /* Assets.xcassets */; };
+		7634F817257448E900E894FF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7634F816257448E900E894FF /* Preview Assets.xcassets */; };
+		7634F819257448E900E894FF /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7634F818257448E900E894FF /* Persistence.swift */; };
+		7634F81C257448E900E894FF /* RSU_Calc.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7634F81A257448E900E894FF /* RSU_Calc.xcdatamodeld */; };
+		7649329D258A39710056077C /* AlphaVantage in Frameworks */ = {isa = PBXBuildFile; productRef = 7649329C258A39710056077C /* AlphaVantage */; };
+		764932A0258A39CA0056077C /* StockSearchFromAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7649329F258A39CA0056077C /* StockSearchFromAPI.swift */; };
+		7649FD3325744E4700B80A41 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7649FD3225744E4600B80A41 /* Main.swift */; };
+		7649FD6925756E5A00B80A41 /* Holdings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7649FD6825756E5900B80A41 /* Holdings.swift */; };
+		7649FD6C257571A300B80A41 /* SharedStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7649FD6B257571A200B80A41 /* SharedStorage.swift */; };
+		7649FD952575906A00B80A41 /* AddRSUView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7649FD942575906A00B80A41 /* AddRSUView.swift */; };
+		769DD689257D3EB90042AA5D /* TimeLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769DD688257D3EB90042AA5D /* TimeLine.swift */; };
+		76C373DF2577E3800079D95D /* GenericViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C373DE2577E3800079D95D /* GenericViews.swift */; };
+		76C373EF257835A40079D95D /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C373EE257835A40079D95D /* Settings.swift */; };
+		76C373F825784AFE0079D95D /* StockAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C373F725784AFE0079D95D /* StockAPI.swift */; };
+		76C6094C257CCFB5007F8267 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 76C6094B257CCFB5007F8267 /* SwiftUICharts */; };
+		76D01B9E2586C0EC0074AA0E /* SwiftUIRefresh in Frameworks */ = {isa = PBXBuildFile; productRef = 76D01B9D2586C0EC0074AA0E /* SwiftUIRefresh */; };
+		76E634FB2590FC53008E39A1 /* SwiftUIRefresh in Resources */ = {isa = PBXBuildFile; fileRef = 76E634FA2590FC53008E39A1 /* SwiftUIRefresh */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7634F80C257448E800E894FF /* RSU Calc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RSU Calc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7634F80F257448E800E894FF /* RSU_CalcApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSU_CalcApp.swift; sourceTree = "<group>"; };
+		7634F811257448E800E894FF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7634F813257448E900E894FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7634F816257448E900E894FF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7634F818257448E900E894FF /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		7634F81B257448E900E894FF /* RSU_Calc.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RSU_Calc.xcdatamodel; sourceTree = "<group>"; };
+		7634F81D257448E900E894FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7636B6BB259B733900FE5CC1 /* swift-alpha-vantage */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "swift-alpha-vantage"; sourceTree = "<group>"; };
+		7649329F258A39CA0056077C /* StockSearchFromAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockSearchFromAPI.swift; sourceTree = "<group>"; };
+		7649FD3225744E4600B80A41 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		7649FD6825756E5900B80A41 /* Holdings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Holdings.swift; sourceTree = "<group>"; };
+		7649FD6B257571A200B80A41 /* SharedStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedStorage.swift; sourceTree = "<group>"; };
+		7649FD7F25757FE000B80A41 /* RSU Calc.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "RSU Calc.entitlements"; sourceTree = "<group>"; };
+		7649FD942575906A00B80A41 /* AddRSUView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRSUView.swift; sourceTree = "<group>"; };
+		769DD688257D3EB90042AA5D /* TimeLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLine.swift; sourceTree = "<group>"; };
+		76C373DE2577E3800079D95D /* GenericViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericViews.swift; sourceTree = "<group>"; };
+		76C373EE257835A40079D95D /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		76C373F725784AFE0079D95D /* StockAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockAPI.swift; sourceTree = "<group>"; };
+		76C60956257D02E2007F8267 /* ChartView */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ChartView; path = "RSU Calc/ChartView"; sourceTree = "<group>"; };
+		76E634FA2590FC53008E39A1 /* SwiftUIRefresh */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SwiftUIRefresh; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7634F809257448E800E894FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76D01B9E2586C0EC0074AA0E /* SwiftUIRefresh in Frameworks */,
+				76C6094C257CCFB5007F8267 /* SwiftUICharts in Frameworks */,
+				7649329D258A39710056077C /* AlphaVantage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7634F803257448E800E894FF = {
+			isa = PBXGroup;
+			children = (
+				76C60956257D02E2007F8267 /* ChartView */,
+				7634F80E257448E800E894FF /* RSU Calc */,
+				7634F80D257448E800E894FF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7634F80D257448E800E894FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7634F80C257448E800E894FF /* RSU Calc.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7634F80E257448E800E894FF /* RSU Calc */ = {
+			isa = PBXGroup;
+			children = (
+				7636B6BB259B733900FE5CC1 /* swift-alpha-vantage */,
+				76E634FA2590FC53008E39A1 /* SwiftUIRefresh */,
+				7649FD7F25757FE000B80A41 /* RSU Calc.entitlements */,
+				7634F80F257448E800E894FF /* RSU_CalcApp.swift */,
+				76C373F725784AFE0079D95D /* StockAPI.swift */,
+				76C373EE257835A40079D95D /* Settings.swift */,
+				7649FD3225744E4600B80A41 /* Main.swift */,
+				769DD688257D3EB90042AA5D /* TimeLine.swift */,
+				76C373DE2577E3800079D95D /* GenericViews.swift */,
+				7649FD942575906A00B80A41 /* AddRSUView.swift */,
+				7649FD6B257571A200B80A41 /* SharedStorage.swift */,
+				7649FD6825756E5900B80A41 /* Holdings.swift */,
+				7634F811257448E800E894FF /* ContentView.swift */,
+				7634F813257448E900E894FF /* Assets.xcassets */,
+				7634F818257448E900E894FF /* Persistence.swift */,
+				7634F81D257448E900E894FF /* Info.plist */,
+				7634F81A257448E900E894FF /* RSU_Calc.xcdatamodeld */,
+				7634F815257448E900E894FF /* Preview Content */,
+				7649329F258A39CA0056077C /* StockSearchFromAPI.swift */,
+			);
+			path = "RSU Calc";
+			sourceTree = "<group>";
+		};
+		7634F815257448E900E894FF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7634F816257448E900E894FF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7634F80B257448E800E894FF /* RSU Calc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7634F820257448E900E894FF /* Build configuration list for PBXNativeTarget "RSU Calc" */;
+			buildPhases = (
+				7634F808257448E800E894FF /* Sources */,
+				7634F809257448E800E894FF /* Frameworks */,
+				7634F80A257448E800E894FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RSU Calc";
+			packageProductDependencies = (
+				76C6094B257CCFB5007F8267 /* SwiftUICharts */,
+				76D01B9D2586C0EC0074AA0E /* SwiftUIRefresh */,
+				7649329C258A39710056077C /* AlphaVantage */,
+			);
+			productName = "RSU Calc";
+			productReference = 7634F80C257448E800E894FF /* RSU Calc.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7634F804257448E800E894FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					7634F80B257448E800E894FF = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 7634F807257448E800E894FF /* Build configuration list for PBXProject "RSU Calc" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7634F803257448E800E894FF;
+			packageReferences = (
+				76C6094A257CCFB5007F8267 /* XCRemoteSwiftPackageReference "ChartView" */,
+				76D01B9C2586C0EC0074AA0E /* XCRemoteSwiftPackageReference "SwiftUIRefresh" */,
+				7649329B258A39710056077C /* XCRemoteSwiftPackageReference "swift-alpha-vantage" */,
+			);
+			productRefGroup = 7634F80D257448E800E894FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7634F80B257448E800E894FF /* RSU Calc */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7634F80A257448E800E894FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76E634FB2590FC53008E39A1 /* SwiftUIRefresh in Resources */,
+				7634F817257448E900E894FF /* Preview Assets.xcassets in Resources */,
+				7634F814257448E900E894FF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7634F808257448E800E894FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76C373DF2577E3800079D95D /* GenericViews.swift in Sources */,
+				7649FD3325744E4700B80A41 /* Main.swift in Sources */,
+				7649FD952575906A00B80A41 /* AddRSUView.swift in Sources */,
+				7634F819257448E900E894FF /* Persistence.swift in Sources */,
+				769DD689257D3EB90042AA5D /* TimeLine.swift in Sources */,
+				7634F81C257448E900E894FF /* RSU_Calc.xcdatamodeld in Sources */,
+				7634F812257448E800E894FF /* ContentView.swift in Sources */,
+				764932A0258A39CA0056077C /* StockSearchFromAPI.swift in Sources */,
+				7634F810257448E800E894FF /* RSU_CalcApp.swift in Sources */,
+				7649FD6925756E5A00B80A41 /* Holdings.swift in Sources */,
+				76C373EF257835A40079D95D /* Settings.swift in Sources */,
+				7649FD6C257571A300B80A41 /* SharedStorage.swift in Sources */,
+				76C373F825784AFE0079D95D /* StockAPI.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7634F81E257448E900E894FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7634F81F257448E900E894FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7634F821257448E900E894FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "RSU Calc/RSU Calc.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"RSU Calc/Preview Content\"";
+				DEVELOPMENT_TEAM = AP3CQLNQDW;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "RSU Calc/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "twizer.RSU-Calc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7634F822257448E900E894FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "RSU Calc/RSU Calc.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"RSU Calc/Preview Content\"";
+				DEVELOPMENT_TEAM = AP3CQLNQDW;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "RSU Calc/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "twizer.RSU-Calc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7634F807257448E800E894FF /* Build configuration list for PBXProject "RSU Calc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7634F81E257448E900E894FF /* Debug */,
+				7634F81F257448E900E894FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7634F820257448E900E894FF /* Build configuration list for PBXNativeTarget "RSU Calc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7634F821257448E900E894FF /* Debug */,
+				7634F822257448E900E894FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7649329B258A39710056077C /* XCRemoteSwiftPackageReference "swift-alpha-vantage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/iamWing/swift-alpha-vantage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+		76C6094A257CCFB5007F8267 /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		76D01B9C2586C0EC0074AA0E /* XCRemoteSwiftPackageReference "SwiftUIRefresh" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/timbersoftware/SwiftUIRefresh.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7649329C258A39710056077C /* AlphaVantage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7649329B258A39710056077C /* XCRemoteSwiftPackageReference "swift-alpha-vantage" */;
+			productName = AlphaVantage;
+		};
+		76C6094B257CCFB5007F8267 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 76C6094A257CCFB5007F8267 /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+		76D01B9D2586C0EC0074AA0E /* SwiftUIRefresh */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 76D01B9C2586C0EC0074AA0E /* XCRemoteSwiftPackageReference "SwiftUIRefresh" */;
+			productName = SwiftUIRefresh;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		7634F81A257448E900E894FF /* RSU_Calc.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7634F81B257448E900E894FF /* RSU_Calc.xcdatamodel */,
+			);
+			currentVersion = 7634F81B257448E900E894FF /* RSU_Calc.xcdatamodel */;
+			path = RSU_Calc.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7634F804257448E800E894FF /* Project object */;
+}
