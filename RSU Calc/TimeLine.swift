@@ -9,6 +9,7 @@ import SwiftUI
 
 struct TimeLine: View {
     @EnvironmentObject var user_data: current_user_data
+    @Environment(\.colorScheme) var colorScheme
     @State private var showing_ADD_RSU_Sheet: Bool = false
     @Binding var currencyFormatter: NumberFormatter
 
@@ -33,17 +34,16 @@ struct TimeLine: View {
                     }
                 .navigationBarTitle("RSU Calculator", displayMode: .inline)
                 .navigationBarItems(
-                        leading:
-                            currency_menu(currencyFormatter: $currencyFormatter).environmentObject(user_data)
-                    ,
+                    leading:
+                        currency_menu(currencyFormatter: $currencyFormatter).environmentObject(user_data),
                         trailing:
                             Button (action: {
                                 self.showing_ADD_RSU_Sheet = true
                             })
                             {
-                                Image(systemName: "plus.app.fill").foregroundColor(.white)
+                                Image(systemName: "plus.app.fill").foregroundColor(colorScheme == .dark ? .white : .black)
                             }
-                    )
+            )
         }
         .navigationViewStyle(StackNavigationViewStyle())
         .sheet(isPresented: $showing_ADD_RSU_Sheet) {

@@ -336,7 +336,14 @@ func loadRateFromAPI()
             
             if (diffs.month ?? 0 < -1)
             {
-                result += " and \(abs(diffs.month ?? 0))"
+                if(withLineBreak ?? false)
+                {
+                    result += "\nand \(abs(diffs.month ?? 0))"
+                }
+                else
+                {
+                    result += " and \(abs(diffs.month ?? 0))"
+                }
             }
             else
             {
@@ -600,7 +607,15 @@ func loadRateFromAPI()
     func calculate_ByDate_Double(targetDate: Date, show_by_vest: Bool, show_withTaxDeduction: Bool) -> Double
     {
         var totalTotal_Earnings = 0.0
-        for stock in self.myStocks{
+        var copy = myStocks
+        for stock in copy{
+            if show_by_vest {
+                copy.sort(by: {$0.vested_date < $1.vested_date})
+            }
+            else
+            {
+                copy.sort(by: {$0.purchase_date < $1.purchase_date})
+            }
             if(show_by_vest)
             {
                 if(stock.vested_date <= targetDate )

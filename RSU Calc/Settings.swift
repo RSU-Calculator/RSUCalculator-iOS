@@ -77,7 +77,7 @@ struct Settings: View {
                 })
                 }
             }
-            currency_menu(currencyFormatter: $currencyFormatter).environmentObject(user_data)
+//            currency_menu(currencyFormatter: $currencyFormatter).environmentObject(user_data)
 //            Section(header: Text("Simulation"))
 //            {
 //                Toggle("Custom stock price" , isOn: $custom_stock_price.animation())

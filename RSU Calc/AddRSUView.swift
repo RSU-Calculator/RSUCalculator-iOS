@@ -26,6 +26,12 @@ extension Numeric {
     var formattedWithSeparator: String { Formatter.withSeparator.string(for: self) ?? "" }
 }
 
+class Proper_Date: ObservableObject {
+    @Published var value: Date = Date()
+}
+
+
+
 struct AddRSUView: View {
     @Environment(\.presentationMode) var presentationMode
     @EnvironmentObject var user_data: current_user_data
@@ -34,13 +40,15 @@ struct AddRSUView: View {
     @State private var amount: String = ""
     @State var user_stock_amount = 0
     @State private var granted_price: String = "0"
-    @State private var granted_date = Date()
-    @State private var vested_date =  Calendar.current.date(byAdding: .year, value: 2, to: Date())!
+    @State private var granted_date = Proper_Date()
+    @State private var vested_date =  Proper_Date()
     @State private var total_value = 0.0
     @State private var profit = 0.0
     @State private var total_value_today = 0.0
     @State var ErrorMsg = ""
     @State var showError: Bool = false
+    @State var showVested : Bool = false
+    @State var times = 0
     @State var stock_value: Double = 0.0
     @State var selected : StockObject = StockObject()
     @State var show_search_for_stock : Bool = true
@@ -88,22 +96,32 @@ struct AddRSUView: View {
                 .keyboardType(UIKeyboardType.numberPad)
             }
 
-            DatePicker(selection: $granted_date,
+                DatePicker(selection: $granted_date.value,
                 in: dateClosedRange,
                 displayedComponents: .date,
                 label: {
                     Text("Granted Date")
-                    
-                }
-            )
-            
-            DatePicker(selection: $vested_date,
+                })
+                .onReceive(granted_date.$value) { date in
+                            if(date != granted_date.value)
+                            {
+                                self.vested_date.value = date
+                                withAnimation
+                                {
+                                    showVested = true
+                                }
+                            }
+                        }
+               if(showVested)
+               {
+               DatePicker(selection: $vested_date.value,
                in: dateClosedRange,
                 displayedComponents: .date,
                 label: {
                     Text("Vested Date")
                 }
-            )
+               )
+               }
             
             ZStack{
             Button(action: {calculate()})
@@ -276,7 +294,7 @@ struct AddRSUView: View {
         {
             self.user_data.myStocks = []
         }
-        let tempItem : RSU_item = RSU_item(stock_symbol: self.selected.symbol!, purchase_date: self.granted_date, vested_date: self.vested_date, original_price: Double(self.granted_price) ?? 0, stock_amount: Int(self.amount) ?? 0)
+        let tempItem : RSU_item = RSU_item(stock_symbol: self.selected.symbol!, purchase_date: self.granted_date.value, vested_date: self.vested_date.value, original_price: Double(self.granted_price) ?? 0, stock_amount: Int(self.amount) ?? 0)
         self.user_data.myStocks.append(tempItem)
         self.user_data.addCompanyToWatch(StockObject: selected)
         self.user_data.myStocks.sort(by: {$0.vested_date < $1.vested_date})
@@ -288,7 +306,8 @@ struct AddRSUView: View {
     
     func clean() {
         self.amount = ""
-        self.granted_date = Date()
+        self.granted_date = Proper_Date()
+        self.vested_date = Proper_Date()
         self.granted_price = ""
         self.disableForm = true
         self.showError = false

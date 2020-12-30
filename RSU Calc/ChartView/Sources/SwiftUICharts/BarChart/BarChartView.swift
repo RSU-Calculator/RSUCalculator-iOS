@@ -22,7 +22,7 @@ public struct BarChartView : View {
     public var currencyFormatter: NumberFormatter
     public var page_headline: String
     public var long_description: String
-    @State private var touchLocation: CGFloat = 0.9
+    @State private var touchLocation: CGFloat = 0.5
     @State private var showValue: Bool = false
     @State private var showLabelValue: Bool = false
     @State private var currentValue: Double = 0 {
@@ -121,7 +121,7 @@ public struct BarChartView : View {
                 .onEnded({ value in
                     self.showValue = false
                     self.showLabelValue = false
-                    self.touchLocation = 0.9
+                    self.touchLocation = 0.5
                 })
         )
             .gesture(TapGesture())
